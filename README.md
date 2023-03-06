@@ -31,8 +31,16 @@ You can either start shooting images your self using your phone camera or you ca
 
 For this example we are going to download a dataset (2Gb) from [Kaggle](https://www.kaggle.com). Go here first and create a free account. Then download [this fruit/veg dataset](https://www.kaggle.com/datasets/kritikseth/fruit-and-vegetable-image-recognition)
 
+This dataset contains around 100 training images of all kinds of fruit and vegatable and 10 test images. You need to go to the kitchen and find say 3 pieces of different fruit and vegtable. In my pantry I found a banana, a red onion and a red chili pepper. So the rest of the example is based on that, but you can choose anything.
+
 ## Build your AI engine.
 This is where the magic happens. We are going to use [Edge Impulse](https://edgeimpulse.com), so go here and create an account.
+
+This is the steps:
+* Create a project
+* 
+
+
 
 
 ## Deploy
