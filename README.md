@@ -103,3 +103,5 @@ Upload!
 ## Run it
 
 > You can ignore the flickering Neopixel, it flickers because it shares a pin with the camera, whcih we did to squeeze as much functionality into this core as possible.
+
+<img src="assets/onion.mov" width=500>
