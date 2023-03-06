@@ -37,8 +37,7 @@ This dataset contains around 100 training images of all kinds of fruit and vegat
 This is where the magic happens. We are going to use [Edge Impulse](https://edgeimpulse.com), so go here and create an account.
 
 This is the steps:
-* Create a project
-* 
+<img src="assets/CWV.svg" width=200 align="right">
 
 
 
