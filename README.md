@@ -67,22 +67,39 @@ This is the steps:
 * Then select the `Training` option
 * And enter a label. Make it short for the sake of the chosen font for the OLED. Like 6 characters long
 * Repeat for all objects
-* And the do the same for test files. Chose the `test` forlder and upload the imsages for each of the objects. Remember to select `Testing` and same labels.
+* And the do the same for test files. Choose the `test` forlder and upload the imsages for each of the objects. Remember to select `Testing` and same labels.
 * As you upload, some files are successful and some fails. Ignore that for this experiment.
 * Now you are ready to create an impulse.
 * Click on add a processing block and again a learning block
-* Chose the `Image` for the processing block
-* And chose `Transfer Learning (Images)` for the learning block
+* Choose the `Image` for the processing block
+* And choose `Transfer Learning (Images)` for the learning block
 * Save the impulse
 * Then go to images (below Create Impulse in the left menu)
+* Choose Greyscale, and save
 * Click on `Generate features`
-* Thus 
-
-
-
+* Wait for job to complete
+* Then go to `transfer learning`
+* And click `Start training`
+* Wait to you see the graphic on the right
+* Now we are ready to deply
+* Click on `Deployment` and select Arduino library
+* Scroll down and click on `Analyze optimization`
+* Wait for the grapchic.
+* You can choose between Quatizied and Unoptimized. I always select the default `Currently selected`
+* Click 'Build' and allow the website to downlaod a zip file to your computer
 
 ## Deploy
+Find the download .zip file. If you use a Mac and Safari, it will have unpacked the .zip file an thrown it in the bin. Fish it out of the .bin so you can upload the .zip file to Arduino.
+
+Open Arduino and install a Library as a .zip file, then choose this recently downloaded .zip file.
+
+In Arduino, go to example and find the folder starting with your project name and ending with ...Inferencing. Open the last example "static-buffer".
+Find the #include line saying the same thing, ...project name ... Inferenceing. Copy that line, you need it later.
+
+Download the .ino file in this repository. Find the line that needs to be replaced with you copied include line an dreplace it. 
+
+Upload!
 
 ## Run it
 
-> Ignore the flickering Neopixel, ... shared pin
+> You can ignore the flickering Neopixel, it flickers because it shares a pin with the camera, whcih we did to squeeze as much functionality into this core as possible.
