@@ -37,7 +37,46 @@ This dataset contains around 100 training images of all kinds of fruit and vegat
 This is where the magic happens. We are going to use [Edge Impulse](https://edgeimpulse.com), so go here and create an account.
 
 This is the steps:
-<img src="assets/CWV.svg" width=200 align="right">
+<img src="assets/1.png" width=500 align="right">
+<img src="assets/2.png" width=500 align="right">
+<img src="assets/3.png" width=500 align="right">
+<img src="assets/4.png" width=500 align="right">
+<img src="assets/5.png" width=500 align="right">
+<img src="assets/7.png" width=500 align="right">
+<img src="assets/8.png" width=500 align="right">
+<img src="assets/9.png" width=500 align="right">
+<img src="assets/10.png" width=500 align="right">
+<img src="assets/11.png" width=500 align="right">
+<img src="assets/12.png" width=500 align="right">
+<img src="assets/13.png" width=500 align="right">
+<img src="assets/14.png" width=500 align="right">
+<img src="assets/15.png" width=500 align="right">
+<img src="assets/16.png" width=500 align="right">
+<img src="assets/17.png" width=500 align="right">
+<img src="assets/18.png" width=500 align="right">
+<img src="assets/19.png" width=500 align="right">
+<img src="assets/20.png" width=500 align="right">
+<img src="assets/21.png" width=500 align="right">
+<img src="assets/22.png" width=500 align="right">
+
+* Create a project.
+* Specify `Images`
+* ...and `Classify a single object (Image classification)`
+* Then go to the uploader
+* In the uploader choose go to the `train` folder and then to your object, say Banana. Select them all.
+* Then select the `Training` option
+* And enter a label. Make it short for the sake of the chosen font for the OLED. Like 6 characters long
+* Repeat for all objects
+* And the do the same for test files. Chose the `test` forlder and upload the imsages for each of the objects. Remember to select `Testing` and same labels.
+* As you upload, some files are successful and some fails. Ignore that for this experiment.
+* Now you are ready to create an impulse.
+* Click on add a processing block and again a learning block
+* Chose the `Image` for the processing block
+* And chose `Transfer Learning (Images)` for the learning block
+* Save the impulse
+* Then go to images (below Create Impulse in the left menu)
+* Click on `Generate features`
+* Thus 
 
 
 
